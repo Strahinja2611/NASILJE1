@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop vršnjačkom nasilju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Stop vršnjačkom nasilju</h1>
+        <p>Podignimo svest. Promenimo svet.</p>
+    </header>
+
+    <nav>
+        <a href="#sta-je">Šta je?</a>
+        <a href="#vrste">Vrste nasilja</a>
+        <a href="#kako-pomoci">Kako pomoći?</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <main>
+        <section id="sta-je">
+            <h2>Šta je vršnjačko nasilje?</h2>
+            <p>Vršnjačko nasilje je bilo koji oblik nasilja među decom i mladima, koji se ponavlja i može imati ozbiljne posledice na mentalno zdravlje žrtve.</p>
+        </section>
+
+        <section id="vrste">
+            <h2>Vrste vršnjačkog nasilja</h2>
+            <ul>
+                <li>Fizičko nasilje (udaranje, guranje)</li>
+                <li>Verbalno nasilje (uvrede, pretnje)</li>
+                <li>Socijalno isključivanje</li>
+                <li>Digitalno nasilje (cyberbullying)</li>
+            </ul>
+        </section>
+
+        <section id="kako-pomoci">
+            <h2>Kako pomoći?</h2>
+            <p>Ako vidiš ili doživiš nasilje, odmah se obrati odrasloj osobi od poverenja. Možeš i anonimno prijaviti slučaj putem obrasca ispod.</p>
+            <button class="button" onclick="prikaziFormu()">Prijavi nasilje</button>
+            <div id="forma" style="display:none; margin-top:20px;">
+                <label for="poruka">Tvoja poruka (anonimna):</label><br>
+                <textarea id="poruka" rows="4" cols="50"></textarea><br><br>
+                <button class="button" onclick="posaljiPoruku()">Pošalji</button>
+                <p id="potvrda" style="color: green; display:none;">Poruka je uspešno poslata!</p>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Za dodatne informacije kontaktirajte školskog psihologa ili pozovite <strong>116 111</strong> – linija za pomoć deci (besplatno i anonimno).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stop vršnjačkom nasilju. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
